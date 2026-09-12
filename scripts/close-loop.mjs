@@ -168,7 +168,7 @@ function requireSlug(name, value) {
 function requireSource(value) {
   const text = String(value ?? "");
   if (!SOURCES.has(text)) {
-    fail("source must be local|grok|cursor-auto");
+    fail("source must be local|grok|cursor-auto|devin");
   }
   return text;
 }
