@@ -1,0 +1,18 @@
+# Devin cloud environment for gmod-workshop-puller.
+# Git-backed blueprint - Lua GMod addon, no build system.
+
+maintenance: |
+  git config user.name "Dark"
+  git config user.email "32241100+Dahhrk@users.noreply.github.com"
+
+knowledge:
+  - name: rules
+    contents: |
+      Lua GMod addon - there is no build or unit gate; proof is in-game on
+      the host machine, so cloud sessions verify by reading the code path
+      and stating what could not be exercised live.
+      Draft PRs only - the author never merges. One verifiable unit per PR
+      with Done means + Keep. Commits author as the repo owner (seeded
+      above) - no AI attribution trailers.
+      close-loop: node scripts/close-loop.mjs records corrections into
+      audit/smells.tsv.
